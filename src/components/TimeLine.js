@@ -3,36 +3,37 @@ import React from "react";
 export default function BasicTimeline() {
   const experience = [
     {
-      role: "Software Enginnering Intern",
-      place: "AjiCod",
-      url: "https://ajicod.com/en",
-      date: "Apr 2022 - Present",
+      role: "Technical Intern (PFA)",
+      place: "Caisse de Depot et de Gestion (CDG)",
+      url: "#",
+      date: "Jul 2024 - Sep 2024",
     },
     {
-      role: "Content Creation Lead",
-      place: "GDSCUIZ",
-      url: "https://gdsc.community.dev/university-of-ibn-zohr/",
-      date: "Sep 2021 - Present",
+      role: "Initiation Intern",
+      place: "Al Barid Bank (ABB)",
+      url: "#",
+      date: "Aug 2023 - Sep 2023",
     },
     {
-      role: "Software Engineering Intern",
-      place: "Atlanta Sanad",
-      url: "https://www.atlantasanad.ma",
-      date: "Aug 2021 - Sep 2021",
-    },
+      role: "Social Media Manager",
+      place: "Google Developer Student Club (GDSC)",
+      url: "#",
+      date: "2022 - 2024",
+    }
   ];
+
   return (
     <div>
-      <div class="timeline">
+      <div className="timeline">
         {experience.map((item) => (
-          <div class="timeline-item">
-            <div class="job">
+          <div className="timeline-item" key={item.date}>
+            <div className="job">
               {item.role} |{" "}
               <strong>
                 <a href={item.url}>{item.place}</a>
               </strong>
             </div>
-            <div class="timeline-date">{item.date}</div>
+            <div className="timeline-date">{item.date}</div>
           </div>
         ))}
       </div>

@@ -11,7 +11,7 @@ export default function Contact() {
       </div>
       <FadeInSection>
         <a
-          href="https://drive.google.com/file/d/1EyNUnM7qrdeSDb9qmhvROAZZRh-cdJHE/view?usp=sharing"
+          href="https://drive.google.com/file/d/1ewuG_f7M1PwwMwHqLR-P-Ys0l_gXo0Er/view?usp=sharing"
           className="intro-contact"
         >
           {"Open Resume"}

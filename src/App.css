@@ -1,9 +1,4 @@
-@font-face {
-  font-family: "NTR";
-  font-weight: 200;
-  font-display: fallback;
-  src: url("/fonts/NTR-Regular.ttf") format("truetype");
-}
+
 
 html {
   scroll-behavior: smooth;

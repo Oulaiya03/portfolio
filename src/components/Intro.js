@@ -12,25 +12,22 @@ export default function Intro() {
       <Typist avgTypingDelay={120}>
         <span className="intro-title">
           {"Hello! I'm "}
-          <span className="intro-name">{"Kaito."}</span>
-          <Typist.Backspace count={6} delay={500} />
-          <span className="intro-name">{"Merouane."}</span>
+          <span className="intro-name">{"Oulaiya."}</span>
         </span>
       </Typist>
       <FadeInSection>
-        <div className="intro-subtitle">Coding is my favorite videogame.</div>
+        <div className="intro-subtitle">Engineering Student passionate about Data & AI.</div>
         <div className="intro-desc">
-          I'm a junior software engineer and MERN Stack web developer from
-          Agadir, very passionate about all aspects of software engineering and
-          enjoy learning new skills everyday.
+          I'm a Digital Engineering student specializing in Data Science and Artificial Intelligence 
+          at ENSAM Rabat.
           <div style={{ marginTop: "10px" }}>
-            I'm looking forward to working with you!{" "}
-            <span class="wave" role="img" aria-label="xxxx">
+            Looking forward to connecting! {" "}
+            <span className="wave" role="img" aria-label="wave">
               👋
             </span>
           </div>
         </div>
-        <a href="mailto:marwan.zouaid@gmail.com" className="intro-contact">
+        <a href="mailto:oulaiya2003@gmail.com" className="intro-contact">
           <EmailRoundedIcon />
           {" Get in touch"}
         </a>

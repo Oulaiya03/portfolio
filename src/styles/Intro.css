@@ -49,7 +49,7 @@ canvas {
   color: var(--slate);
   font-family: "NTR", sans-serif;
   font-size: 22px;
-  max-width: 40%;
+  max-width: 60%;
   text-align: justify;
   padding-bottom: 50px;
 }

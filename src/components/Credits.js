@@ -7,7 +7,7 @@ export default function Credits() {
     <FadeInSection>
       <div id="credits">
         <div className="ending-credits">
-          <div>Made with ♥ by Merouane Zouaid</div>
+          <div>Made with ♥ by Oula</div>
         </div>
       </div>
     </FadeInSection>

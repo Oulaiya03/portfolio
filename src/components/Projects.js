@@ -6,26 +6,21 @@ import OpenInBrowserIcon from "@material-ui/icons/OpenInBrowser";
 import FadeInSection from "./FadeInSection";
 
 const projects = {
-  "Complete AI | Text Autocomplete for ChatGPT": {
-    desc:
-      "Chrome extension that helps you write prompts faster on ChatGPT with AI-powered autocompletion.",
-    techStack: "Python (Flask), Bootstrap, SQLite",
-    link: "https://github.com/merouanezouaid/complete-ai",
-    open: "https://chrome.google.com/webstore/detail/complete-ai/fbmngedglhldachckegobogcglnbojge/",
+  "Sign Language Detection": {
+    desc: "Developed ML models for sign language detection and tumor detection using Python, OpenCV, and Mediapipe.",
+    techStack: "Python, OpenCV, Mediapipe, Machine Learning",
+    link: "#",
   },
-  "Zklib-js": {
-    desc:
-      "Updated Node.js module for ZKTeco biometric devices (+1000 downloads)",
-    techStack: "Node.js, Hardware",
-    link: "https://github.com/merouanezouaid/zklib-js",
-    open: "https://www.npmjs.com/package/zklib-js",
+  "ENSAMI Chatbot": {
+    desc: "Created an intelligent chatbot for ENSAM Rabat website using LangChain and GPT-3.5-turbo.",
+    techStack: "LangChain, GPT-3.5, Python, NLP",
+    link: "#",
   },
-  "My Gym": {
-    desc: "A gym management system MERN Stack web application",
-    techStack: "MongoDB, Express, React, Node.js",
-    link: "https://github.com/merouanezouaid/gym-management-app",
-    open: "https://gym-management-system-eight.vercel.app/",
-  },
+  "VARUS Application": {
+    desc: "Mobile application using AI to detect and analyze faults in football, enhancing VAR capabilities.",
+    techStack: "Computer Vision, AI, Mobile Development",
+    link: "#",
+  }
 };
 
 export default function Projects() {

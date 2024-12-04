@@ -1,53 +1,50 @@
 import React from "react";
-
 import "../styles/About.css";
 import FadeInSection from "./FadeInSection";
 
 export default function About() {
   const tech_stack = [
-    "Javascript ES6+",
-    "TypeScript",
-    "React.js",
-    "Node.js",
-    "Express",
-    "MongoDB",
     "Python",
+    "R",
     "Java",
-    "HTML & CSS",
+    "SQL",
+    "JavaScript",
+    "C/C++",
+    "Power BI",
+    "OpenCV",
+    "LangChain",
+    "Streamlit",
     "Git",
+    "Mediapipe"
   ];
 
-  const image = require("./assets/mypic.jpg");
-
   return (
-    <div id="about">
+    <div id="about" >
       <FadeInSection>
-        <div className="section-header ">
+        <div style={{ marginTop: "10px" }} className="section-header">
           <span className="section-title">$ About me</span>
         </div>
         <div className="about-content">
           <div className="about-description">
             <p>
-              Hello, I am Merouane Zouaid, a sophomore majoring in Computer
-              Engineering at the Higher School of Technology in Agadir, Morocco.
+              I am a Digital Engineering student at the National School of Arts and Crafts (ENSAM-R) 
+              in Rabat, specializing in Data Science and Artificial Intelligence. I am also co-founder of <a href="https://www.instagram.com/alts.morocco" target="_blank" rel="noopener noreferrer">ALTs Morocco</a>.
             </p>
-            {"I currently use the following technologies:"}
+            {"Here are some technologies I've been working with:"}
             <ul className="tech-stack">
               {tech_stack.map((tech_item) => (
-                <li>{tech_item}</li>
+                <li key={tech_item}>{tech_item}</li>
               ))}
             </ul>
             <p>
-              I'm interested in Web Developement, Software Engineering and I'm
-              self-studying Machine Learning and Cyber Security. I'm also a
-              content creator on Instagram and Twitter.
+              I'm particularly interested in Machine Learning, Natural Language Processing, 
+              and Computer Vision. I've worked on various projects including sign language 
+              detection, intelligent chatbots, and sports analytics applications.
             </p>
             <p>
-              When I'm AFK, you can find me playing Football or reading books.
+              When I'm not coding, I'm actively involved in student organizations and 
+              participating in hackathons and tech competitions.
             </p>
-          </div>
-          <div className="about-image">
-            <img src={image} alt="kaitopic" />
           </div>
         </div>
       </FadeInSection>
