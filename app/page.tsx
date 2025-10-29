@@ -126,7 +126,7 @@ export default function Portfolio() {
                 asChild
                 className="animate-fade-in-up animation-delay-1100 hover:scale-105 transition-transform bg-transparent"
               >
-                <a href="https://linkedin.com/in/oulaiya-gaddari" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/oulaiya-gaddari-101ba1256/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="mr-2 h-4 w-4" />
                   LinkedIn
                 </a>
@@ -136,7 +136,7 @@ export default function Portfolio() {
           <div className="relative w-64 h-64 md:w-80 md:h-80 flex-shrink-0 animate-fade-in-up animation-delay-300">
             <div className="absolute inset-0 bg-accent rounded-full blur-2xl opacity-20 animate-pulse"></div>
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_E4271.png-r6ncG7vhes23HKyLkAyTVYxJ8QUH6x.jpeg"
+              src="/images/design-mode/IMG_E4271.png.jpeg"
               alt="Oulaiya Gaddari"
               width={320}
               height={320}
