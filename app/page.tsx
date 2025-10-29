@@ -140,7 +140,7 @@ export default function Portfolio() {
               alt="Oulaiya Gaddari"
               width={320}
               height={320}
-              className="relative rounded-full border-4 border-accent shadow-2xl shadow-accent/30 hover:scale-105 transition-transform duration-300 object-cover"
+              className="relative rounded-full border-4 border-accent shadow-2xl shadow-accent/30 hover:scale-105 transition-transform duration-100 object-cover"
               priority
             />
           </div>
