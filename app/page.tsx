@@ -85,7 +85,7 @@ export default function Portfolio() {
       </div>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-16 md:py-24">
+      <section className="container mx-auto px-4 py-16 md:py-24 mb-12 md:mb-20">
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 max-w-6xl mx-auto">
           <div className="flex-1 max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 text-balance">
@@ -152,7 +152,7 @@ export default function Portfolio() {
       </section>
 
       {/* Education Section */}
-      <section className="container mx-auto px-4 py-16 border-t border-border">
+      <section className="container mx-auto px-4 py-16 border-t border-border mt-8">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 animate-fade-in-up">
             <span className="text-accent">$ </span>
