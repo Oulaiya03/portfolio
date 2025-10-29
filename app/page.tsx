@@ -136,7 +136,7 @@ export default function Portfolio() {
           <div className="relative w-64 h-64 md:w-80 md:h-80 flex-shrink-0 animate-fade-in-up animation-delay-300">
             <div className="absolute inset-0 bg-accent rounded-full blur-2xl opacity-20 animate-pulse"></div>
             <Image
-              src="/images/design-mode/IMG_E4271.png.jpeg"
+              src="/images/design-mode/IMG_E4271.png(1).jpeg"
               alt="Oulaiya Gaddari"
               width={320}
               height={320}
