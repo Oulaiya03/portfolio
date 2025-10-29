@@ -96,8 +96,8 @@ export default function Portfolio() {
               Data Science & AI Engineering Student
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8 animate-fade-in-up animation-delay-700">
-              Master's student specializing in Data Science with expertise in Machine Learning, Computer Vision, and
-              Generative AI. Currently seeking a final-year internship starting March 2026 to apply cutting-edge AI
+              Graduate Data Science and AI Engineer, and currently pursuing a Master's degree specializing in Data Science. With expertise in Machine Learning, Computer Vision, and
+              Generative AI, I am currently seeking a final-year internship starting March 2026 to apply cutting-edge AI
               solutions to real-world challenges.
             </p>
             <div className="flex flex-wrap gap-4">
