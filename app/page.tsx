@@ -137,17 +137,16 @@ export default function Portfolio() {
               </Button>
             </div>
           </div>
-          <div className="relative w-64 h-64 md:w-72 md:h-72 flex-shrink-0 animate-fade-in-up animation-delay-300 md:-mt-8">
+          <div className="relative w-64 h-64 md:w-80 md:h-80 flex-shrink-0 animate-fade-in-up animation-delay-300">
             <div className="absolute inset-0 bg-accent rounded-full blur-2xl opacity-20 animate-pulse"></div>
-              <Image
-                src="/images/design-mode/IMG_E4271.png(1).jpeg"
-                alt="Oulaiya Gaddari"
-                width={288}
-                height={288}
-                className="relative rounded-4xl border-4 border-accent shadow-2xl shadow-accent/30 hover:scale-105 transition-transform duration-100 object-cover w-full h-full"
-                priority
-              />
-
+            <Image
+              src="/images/design-mode/IMG_E4271.png(1).jpeg"
+              alt="Oulaiya Gaddari"
+              width={320}
+              height={320}
+              className="relative rounded-full border-4 border-accent shadow-2xl shadow-accent/30 hover:scale-105 transition-transform duration-100 object-cover"
+              priority
+            />
           </div>
         </div>
       </section>
