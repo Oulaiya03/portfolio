@@ -93,12 +93,13 @@ export default function Portfolio() {
               <span className="animate-pulse">|</span>
             </h1>
             <p className="text-xl md:text-2xl text-accent mb-6 animate-fade-in-up animation-delay-500">
-              Data Science & AI Engineering Student
+              AI Engineer — Data Science, LLMs & Agentic AI
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8 animate-fade-in-up animation-delay-700">
-              Graduate Data Science and AI Engineer, and currently pursuing a Master's degree specializing in Data Science. With expertise in Machine Learning, Computer Vision, and
-              Generative AI, I am currently seeking a final-year internship starting March 2026 to apply cutting-edge AI
-              solutions to real-world challenges.
+              Graduate Data Science & AI Engineer pursuing an MSc in Data Science. I'm currently an AI & Automation
+              Engineer Intern at Mantu in Paris, building multi-agent AI systems, with hands-on experience in
+              Generative AI, RAG, Machine Learning and Computer Vision. I'm seeking a full-time AI Engineer position
+              starting September 2026 to apply cutting-edge AI solutions to real-world challenges.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button
@@ -127,7 +128,7 @@ export default function Portfolio() {
                 className="animate-fade-in-up animation-delay-1100 hover:scale-105 transition-transform bg-transparent"
               >
                 <a
-                  href="https://www.linkedin.com/in/oulaiya-gaddari-101ba1256/"
+                  href="https://www.linkedin.com/in/oulaiya-gaddari"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -203,35 +204,64 @@ export default function Portfolio() {
             <Card className="p-6 hover:scale-[1.02] hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 animate-fade-in-up animation-delay-200">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-3">
                 <div>
-                  <h3 className="text-xl font-semibold">Final-Year Internship (PFE)</h3>
-                  <p className="text-muted-foreground">Orange Group, Sofrecom — Rabat</p>
+                  <h3 className="text-xl font-semibold">AI & Automation Engineer Intern</h3>
+                  <p className="text-muted-foreground">Mantu Group — Paris</p>
                 </div>
-                <span className="text-sm text-accent whitespace-nowrap">February – July 2025</span>
+                <span className="text-sm text-accent whitespace-nowrap">March 2026 – Present</span>
               </div>
               <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                <li>Analysis and forecasting of Network and Service KPIs based on historical data</li>
-                <li>Development of a Generative AI to automate comments in Quality of Service reports</li>
-                <li>Creation of a predictive model to anticipate anomalies and network KPI trends</li>
-                <li>Implementation of a dashboard for real-time visualization of analytics and predictions</li>
+                <li>
+                  Built "Madame Irma", an organization digital twin using AI agents to simulate strategic decision
+                  cascades across 123 employees modeled from Mantu's org chart
+                </li>
+                <li>
+                  Designed a multi-agent simulation engine (Python, GPT-5.1, Neo4j) reproducing internal communications
+                  to assess organizational impact before deployment
+                </li>
+                <li>
+                  Built an executive report pipeline (ReAct loop, graph + SQL retrieval) producing governance audits and
+                  strategic recommendations
+                </li>
               </ul>
             </Card>
 
             <Card className="p-6 hover:scale-[1.02] hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 animate-fade-in-up animation-delay-300">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-3">
                 <div>
-                  <h3 className="text-xl font-semibold">Technical Internship (PFA)</h3>
+                  <h3 className="text-xl font-semibold">AI Engineer Intern (PFE)</h3>
+                  <p className="text-muted-foreground">Orange Group, Sofrecom — Rabat</p>
+                </div>
+                <span className="text-sm text-accent whitespace-nowrap">February – July 2025</span>
+              </div>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                <li>
+                  Built a RAG pipeline (LangChain, LLaMA 3.1 8B, ChromaDB, HuggingFace) automating QoS report commentary
+                  generation for 18 OMEA countries
+                </li>
+                <li>Designed a predictive module (LSTM vs XGBoost) to forecast network congestion; XGBoost selected (R² = 0.91)</li>
+                <li>Developed an interactive dashboard (Dash/Plotly) visualizing 300+ KPIs and AI-generated insights</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6 hover:scale-[1.02] hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 animate-fade-in-up animation-delay-400">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-3">
+                <div>
+                  <h3 className="text-xl font-semibold">AI & Data Science Engineer Intern (PFA)</h3>
                   <p className="text-muted-foreground">Caisse de Dépôt et de Gestion (CDG) — Rabat</p>
                 </div>
                 <span className="text-sm text-accent whitespace-nowrap">July – September 2024</span>
               </div>
               <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                <li>Designed a WhatsApp Chatbot to automate responses to notaries and clients</li>
-                <li>Developed a Power BI dashboard to automate and visualize business data</li>
+                <li>
+                  Built a WhatsApp chatbot (Node.js, Twilio API, Python) automating responses to notaries and clients
+                  (~80% automation rate)
+                </li>
+                <li>Developed a Power BI dashboard to automate and visualize operational data</li>
                 <li>Created a user guide and tutorial video to enhance Power BI adoption</li>
               </ul>
             </Card>
 
-            <Card className="p-6 hover:scale-[1.02] hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 animate-fade-in-up animation-delay-400">
+            <Card className="p-6 hover:scale-[1.02] hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 animate-fade-in-up animation-delay-500">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-3">
                 <div>
                   <h3 className="text-xl font-semibold">Introductory Internship</h3>
@@ -240,8 +270,7 @@ export default function Portfolio() {
                 <span className="text-sm text-accent whitespace-nowrap">August – September 2023</span>
               </div>
               <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                <li>Developed a web platform for managing banking complaints</li>
-                <li>Implemented an agile deployment workflow</li>
+                <li>Built a banking complaint management platform with an agile deployment workflow</li>
               </ul>
             </Card>
           </div>
@@ -257,6 +286,31 @@ export default function Portfolio() {
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="p-6 hover:scale-[1.02] hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 animate-fade-in-up animation-delay-200">
+              <h3 className="text-xl font-semibold mb-3">Bank Customer Churn Prediction</h3>
+              <p className="text-muted-foreground mb-4">
+                End-to-end churn prediction on a 10,000+ customer dataset. Benchmarked Random Forest, XGBoost and
+                LightGBM (best F1 = 0.91), with a full MLOps pipeline — CI/CD, drift monitoring and a RAG/LLM assistant.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Badge variant="secondary" className="hover:bg-accent hover:text-accent-foreground transition-colors">
+                  FastAPI
+                </Badge>
+                <Badge variant="secondary" className="hover:bg-accent hover:text-accent-foreground transition-colors">
+                  LightGBM
+                </Badge>
+                <Badge variant="secondary" className="hover:bg-accent hover:text-accent-foreground transition-colors">
+                  MLOps
+                </Badge>
+                <Badge variant="secondary" className="hover:bg-accent hover:text-accent-foreground transition-colors">
+                  Jenkins
+                </Badge>
+                <Badge variant="secondary" className="hover:bg-accent hover:text-accent-foreground transition-colors">
+                  Docker
+                </Badge>
+              </div>
+            </Card>
+
+            <Card className="p-6 hover:scale-[1.02] hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 animate-fade-in-up animation-delay-300">
               <h3 className="text-xl font-semibold mb-3">Machine Learning Detection</h3>
               <p className="text-muted-foreground mb-4">
                 Computer Vision models for sign language recognition and tumor detection using Python, OpenCV, and
@@ -275,10 +329,11 @@ export default function Portfolio() {
               </div>
             </Card>
 
-            <Card className="p-6 hover:scale-[1.02] hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 animate-fade-in-up animation-delay-300">
-              <h3 className="text-xl font-semibold mb-3">ENSAMI Intelligent Chatbot</h3>
+            <Card className="p-6 hover:scale-[1.02] hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 animate-fade-in-up animation-delay-400">
+              <h3 className="text-xl font-semibold mb-3">ENSAM Intelligent Chatbot</h3>
               <p className="text-muted-foreground mb-4">
-                Developed a chatbot using LangChain and GPT-3.5 to automate responses for students and visitors.
+                Developed a generative-AI chatbot using LangChain and GPT-3.5 to automate responses for students and
+                visitors.
               </p>
               <div className="flex flex-wrap gap-2">
                 <Badge variant="secondary" className="hover:bg-accent hover:text-accent-foreground transition-colors">
@@ -289,25 +344,6 @@ export default function Portfolio() {
                 </Badge>
                 <Badge variant="secondary" className="hover:bg-accent hover:text-accent-foreground transition-colors">
                   NLP
-                </Badge>
-              </div>
-            </Card>
-
-            <Card className="p-6 hover:scale-[1.02] hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 animate-fade-in-up animation-delay-400">
-              <h3 className="text-xl font-semibold mb-3">VARUS App</h3>
-              <p className="text-muted-foreground mb-4">
-                AI-based mobile application to detect and analyze football fouls and provide predictive insights for VAR
-                improvement.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary" className="hover:bg-accent hover:text-accent-foreground transition-colors">
-                  Computer Vision
-                </Badge>
-                <Badge variant="secondary" className="hover:bg-accent hover:text-accent-foreground transition-colors">
-                  Mobile Dev
-                </Badge>
-                <Badge variant="secondary" className="hover:bg-accent hover:text-accent-foreground transition-colors">
-                  AI
                 </Badge>
               </div>
             </Card>
@@ -342,45 +378,61 @@ export default function Portfolio() {
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="p-6 hover:scale-[1.02] hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 animate-fade-in-up animation-delay-200">
-              <h3 className="text-lg font-semibold mb-4">Programming & Data Analysis</h3>
+              <h3 className="text-lg font-semibold mb-4">Programming Languages</h3>
               <div className="flex flex-wrap gap-2">
                 <Badge className="hover:scale-110 transition-transform">Python</Badge>
-                <Badge className="hover:scale-110 transition-transform">R</Badge>
                 <Badge className="hover:scale-110 transition-transform">SQL</Badge>
+                <Badge className="hover:scale-110 transition-transform">R</Badge>
+                <Badge className="hover:scale-110 transition-transform">TypeScript</Badge>
+                <Badge className="hover:scale-110 transition-transform">JavaScript</Badge>
+                <Badge className="hover:scale-110 transition-transform">Java</Badge>
               </div>
             </Card>
 
             <Card className="p-6 hover:scale-[1.02] hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 animate-fade-in-up animation-delay-300">
               <h3 className="text-lg font-semibold mb-4">AI & Machine Learning</h3>
               <div className="flex flex-wrap gap-2">
-                <Badge className="hover:scale-110 transition-transform">Supervised Learning</Badge>
-                <Badge className="hover:scale-110 transition-transform">Unsupervised Learning</Badge>
-                <Badge className="hover:scale-110 transition-transform">CNN</Badge>
+                <Badge className="hover:scale-110 transition-transform">LLMs</Badge>
+                <Badge className="hover:scale-110 transition-transform">RAG</Badge>
+                <Badge className="hover:scale-110 transition-transform">Agentic AI</Badge>
+                <Badge className="hover:scale-110 transition-transform">Prompt Engineering</Badge>
+                <Badge className="hover:scale-110 transition-transform">Fine-tuning</Badge>
+                <Badge className="hover:scale-110 transition-transform">Embeddings</Badge>
+                <Badge className="hover:scale-110 transition-transform">Vector Databases</Badge>
                 <Badge className="hover:scale-110 transition-transform">NLP</Badge>
-                <Badge className="hover:scale-110 transition-transform">Neural Networks</Badge>
+                <Badge className="hover:scale-110 transition-transform">Computer Vision</Badge>
+                <Badge className="hover:scale-110 transition-transform">Deep Learning</Badge>
               </div>
             </Card>
 
             <Card className="p-6 hover:scale-[1.02] hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 animate-fade-in-up animation-delay-400">
-              <h3 className="text-lg font-semibold mb-4">Computer Vision & Generative AI</h3>
+              <h3 className="text-lg font-semibold mb-4">Frameworks & Libraries</h3>
               <div className="flex flex-wrap gap-2">
+                <Badge className="hover:scale-110 transition-transform">LangChain</Badge>
+                <Badge className="hover:scale-110 transition-transform">LangGraph</Badge>
+                <Badge className="hover:scale-110 transition-transform">CrewAI</Badge>
+                <Badge className="hover:scale-110 transition-transform">PyTorch</Badge>
+                <Badge className="hover:scale-110 transition-transform">TensorFlow</Badge>
+                <Badge className="hover:scale-110 transition-transform">Scikit-learn</Badge>
                 <Badge className="hover:scale-110 transition-transform">OpenCV</Badge>
                 <Badge className="hover:scale-110 transition-transform">Mediapipe</Badge>
-                <Badge className="hover:scale-110 transition-transform">LangChain</Badge>
-                <Badge className="hover:scale-110 transition-transform">RAG</Badge>
-                <Badge className="hover:scale-110 transition-transform">LLaMA</Badge>
-                <Badge className="hover:scale-110 transition-transform">GPT</Badge>
+                <Badge className="hover:scale-110 transition-transform">Pandas</Badge>
+                <Badge className="hover:scale-110 transition-transform">NumPy</Badge>
               </div>
             </Card>
 
             <Card className="p-6 hover:scale-[1.02] hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 animate-fade-in-up animation-delay-500">
-              <h3 className="text-lg font-semibold mb-4">Visualization & Deployment</h3>
+              <h3 className="text-lg font-semibold mb-4">Tools & Deployment</h3>
               <div className="flex flex-wrap gap-2">
-                <Badge className="hover:scale-110 transition-transform">Power BI</Badge>
-                <Badge className="hover:scale-110 transition-transform">Pandas</Badge>
-                <Badge className="hover:scale-110 transition-transform">Scikit-learn</Badge>
-                <Badge className="hover:scale-110 transition-transform">Streamlit</Badge>
+                <Badge className="hover:scale-110 transition-transform">Docker</Badge>
+                <Badge className="hover:scale-110 transition-transform">Jenkins</Badge>
                 <Badge className="hover:scale-110 transition-transform">Git</Badge>
+                <Badge className="hover:scale-110 transition-transform">Azure DevOps</Badge>
+                <Badge className="hover:scale-110 transition-transform">Neo4j</Badge>
+                <Badge className="hover:scale-110 transition-transform">ChromaDB</Badge>
+                <Badge className="hover:scale-110 transition-transform">Power BI</Badge>
+                <Badge className="hover:scale-110 transition-transform">Dash</Badge>
+                <Badge className="hover:scale-110 transition-transform">Streamlit</Badge>
               </div>
             </Card>
           </div>
@@ -444,7 +496,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="container mx-auto px-4 py-8 border-t border-border">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>© 2025 Oulaiya Gaddari. All rights reserved.</p>
+          <p>© 2026 Oulaiya Gaddari. All rights reserved.</p>
           <div className="flex gap-4">
             <a href="mailto:oulaiya.gaddari03@gmail.com" className="hover:text-accent transition-colors">
               Email

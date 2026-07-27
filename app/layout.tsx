@@ -8,9 +8,9 @@ const inter = Inter({ subsets: ["latin"] })
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Oulaiya Gaddari - Data Science & AI Portfolio",
+  title: "Oulaiya Gaddari - AI Engineer Portfolio",
   description:
-    "Portfolio of Oulaiya Gaddari - Master's student in Data Science specializing in AI, Machine Learning, and Computer Vision",
+    "Portfolio of Oulaiya Gaddari - AI Engineer and MSc Data Science student specializing in LLMs, Agentic AI, RAG, Machine Learning and Computer Vision",
   generator: "v0.app",
 }
 
