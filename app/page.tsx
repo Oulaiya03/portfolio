@@ -101,39 +101,6 @@ function Reveal({
   )
 }
 
-/** Counts up to a number once it scrolls into view. */
-function Counter({ to, decimals = 0, duration = 1500 }: { to: number; decimals?: number; duration?: number }) {
-  const ref = useRef<HTMLSpanElement>(null)
-  const [value, setValue] = useState(0)
-
-  useEffect(() => {
-    const el = ref.current
-    if (!el) return
-
-    const io = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) return
-        io.unobserve(el)
-
-        const start = performance.now()
-        const tick = (now: number) => {
-          const p = Math.min((now - start) / duration, 1)
-          // ease-out-cubic
-          setValue(to * (1 - Math.pow(1 - p, 3)))
-          if (p < 1) requestAnimationFrame(tick)
-        }
-        requestAnimationFrame(tick)
-      },
-      { threshold: 0.5 },
-    )
-
-    io.observe(el)
-    return () => io.disconnect()
-  }, [to, duration])
-
-  return <span ref={ref}>{value.toFixed(decimals)}</span>
-}
-
 /** Cycles through a list of words with a soft blur-in. */
 function RotatingText({ words, interval = 2400 }: { words: string[]; interval?: number }) {
   const [index, setIndex] = useState(0)
@@ -444,7 +411,7 @@ export default function Portfolio() {
           />
         </div>
 
-        <div className="container mx-auto mb-12 px-4 py-16 md:mb-20 md:py-24">
+        <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-8 md:flex-row md:gap-12">
             <div className="max-w-2xl flex-1">
               <p className="mb-3 flex items-center gap-2 text-sm text-muted-foreground">
@@ -463,13 +430,12 @@ export default function Portfolio() {
               </p>
 
               <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
-                Graduate Data Science &amp; AI Engineer pursuing an MSc in Data Science. I&apos;m currently an AI &amp;
-                Automation Engineer Intern at Mantu in Paris, building multi-agent AI systems, with hands-on experience
-                in Generative AI, RAG, Machine Learning and Computer Vision. I&apos;m seeking a full-time AI Engineer
-                position starting September 2026.
+                Graduate Data Science &amp; AI Engineer. I&apos;m currently an AI &amp; Automation Engineer at Mantu in
+                Paris, building multi-agent AI systems, with hands-on experience in Generative AI, RAG and Machine
+                Learning. I&apos;m seeking a full-time AI Engineer position starting September 2026.
               </p>
 
-              <div className="mb-10 flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4">
                 <Button variant="default" asChild className="transition-transform hover:scale-105">
                   <a href="mailto:oulaiya.gaddari03@gmail.com">
                     <Mail className="mr-2 h-4 w-4" />
@@ -495,26 +461,6 @@ export default function Portfolio() {
                   </a>
                 </Button>
               </div>
-
-              {/* live stats */}
-              <dl className="grid max-w-lg grid-cols-2 gap-4 sm:grid-cols-4">
-                {[
-                  { value: <Counter to={4} />, label: "Internships" },
-                  { value: <Counter to={18} />, label: "Countries reached" },
-                  { value: <Counter to={0.91} decimals={2} />, label: "Best model F1" },
-                  { value: <Counter to={3} />, label: "Languages" },
-                ].map((stat, i) => (
-                  <Reveal key={stat.label} delay={i * 90} className="h-full">
-                    <div className="flex h-full flex-col justify-center rounded-lg border border-border bg-card/60 p-3 text-center transition-colors hover:border-accent/50">
-                      <dt className="sr-only">{stat.label}</dt>
-                      <dd>
-                        <span className="block text-2xl font-bold text-accent">{stat.value}</span>
-                        <span className="text-xs text-muted-foreground">{stat.label}</span>
-                      </dd>
-                    </div>
-                  </Reveal>
-                ))}
-              </dl>
             </div>
 
             {/* portrait */}
@@ -544,25 +490,39 @@ export default function Portfolio() {
           <div className="space-y-6">
             {[
               {
-                degree: "Master's Degree in Data Science",
-                school: "University Claude Bernard Lyon 1",
+                degree: "Master 2 in Data Science",
+                school: "Université Claude Bernard Lyon 1",
                 place: "Lyon, France",
                 years: "2025 → 2026",
-                courses: "Data Mining, Graph Data Analysis, Probabilistic Graphical Models, Data Visualization",
+                blurb:
+                  "One of France's leading public research universities in science and technology.",
+                courses:
+                  "Coursework focused on the modeling side of data science: data mining, graph data analysis, probabilistic graphical models, statistics and data visualization, alongside applied machine learning.",
+                activities: [],
               },
               {
-                degree: "Engineering in Data Science and Artificial Intelligence",
+                degree: "Engineering Degree (Cycle d'Ingénieur) in Artificial Intelligence and Data Science",
                 school: "National School of Arts and Crafts (ENSAM)",
                 place: "Rabat, Morocco",
                 years: "2022 → 2025",
-                courses: "Machine Learning, Deep Learning, Big Data, Data Analysis",
+                blurb:
+                  "Three year engineering degree specialized in Artificial Intelligence and Data Science at one of Morocco's top engineering schools.",
+                courses:
+                  "Curriculum covered the full AI stack: machine learning, deep learning (CNNs, RNNs, Transformers), natural language processing, computer vision, statistics, data engineering and software engineering fundamentals, built on strong mathematics and algorithms.",
+                activities: [
+                  "Core Team Member of GDSC ENSAM Rabat",
+                  "Finalist, Panafrican Mega-Hackathon (Orange)",
+                  "Co-organizer of TEDxENSAM Rabat",
+                ],
               },
               {
                 degree: "Preparatory Classes, Mathematics and Physics",
                 school: "AL QALAM",
                 place: "Agadir, Morocco",
                 years: "2020 → 2022",
+                blurb: "",
                 courses: "",
+                activities: [],
               },
             ].map((item, i) => (
               <Reveal key={item.degree} delay={i * 110}>
@@ -578,11 +538,21 @@ export default function Portfolio() {
                     </div>
                     <span className="whitespace-nowrap text-sm font-medium text-accent">{item.years}</span>
                   </div>
-                  {item.courses && (
-                    <p className="mt-3 text-sm text-muted-foreground">
-                      <span className="font-medium text-foreground">Coursework: </span>
-                      {item.courses}
-                    </p>
+                  {item.blurb && <p className="mt-3 text-muted-foreground">{item.blurb}</p>}
+                  {item.courses && <p className="mt-3 text-sm text-muted-foreground">{item.courses}</p>}
+                  {item.activities.length > 0 && (
+                    <div className="mt-4">
+                      <p className="mb-2 text-sm font-medium text-foreground">Activities and societies</p>
+                      <ul className="flex flex-wrap gap-2">
+                        {item.activities.map((a) => (
+                          <li key={a}>
+                            <Badge variant="secondary" className="badge-pop">
+                              {a}
+                            </Badge>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   )}
                 </Card>
               </Reveal>
@@ -612,7 +582,7 @@ export default function Portfolio() {
                   ],
                 },
                 {
-                  role: "AI Engineer Intern (PFE)",
+                  role: "AI Engineer Intern",
                   org: "Orange Group, Sofrecom",
                   place: "Rabat, Morocco",
                   dates: "Feb 2025 → Jul 2025",
@@ -624,7 +594,7 @@ export default function Portfolio() {
                   ],
                 },
                 {
-                  role: "AI & Data Science Engineer Intern (PFA)",
+                  role: "AI & Data Science Engineer Intern",
                   org: "Caisse de Dépôt et de Gestion (CDG)",
                   place: "Rabat, Morocco",
                   dates: "Jul 2024 → Sep 2024",
