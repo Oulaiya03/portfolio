@@ -21,6 +21,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Without JS the reveal animations never run, so show everything. */}
+        <noscript>
+          <style
+            dangerouslySetInnerHTML={{
+              __html: ".reveal{opacity:1 !important;transform:none !important}",
+            }}
+          />
+        </noscript>
+      </head>
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />
