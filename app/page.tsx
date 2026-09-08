@@ -573,12 +573,14 @@ export default function Portfolio() {
                   role: "AI & Automation Engineer Intern",
                   org: "Mantu Group",
                   place: "Paris, France",
-                  dates: "Mar 2026 → Present",
-                  current: true,
+                  dates: "Mar 2026 → Sep 2026",
+                  current: false,
                   points: [
                     'Built "Madame Irma", an organization digital twin using AI agents to simulate strategic decision cascades across 123 employees modeled from Mantu\'s org chart',
                     "Designed a multi-agent simulation engine (Python, GPT-5.1, Neo4j) reproducing internal communications to assess organizational impact before deployment",
                     "Built an executive report pipeline (ReAct loop, graph and SQL retrieval) producing governance audits and strategic recommendations",
+                    "Built production HR automations with Dust and Power Automate, including birthday recognition and a work-anniversary workflow across 30+ entities with timezone-aware scheduling and HR approval",
+                    "Coached HR governance teams on Dust through practical onboarding sessions",
                   ],
                 },
                 {
@@ -664,6 +666,11 @@ export default function Portfolio() {
           <div className="grid gap-6 md:grid-cols-2">
             {[
               {
+                title: "Ministry of Armed Forces Public Tender",
+                desc: "Developed the technical response for a crisis communication training platform: a secure extranet with a real-time simulated media ecosystem. Response selected among the top 3 proposals.",
+                tags: ["Multi-Agent Systems", "Simulation", "Secure Extranet"],
+              },
+              {
                 title: "Bank Customer Churn Prediction",
                 desc: "End-to-end churn prediction on a 10,000+ customer dataset. Benchmarked Random Forest, XGBoost and LightGBM (best F1 = 0.91), with a full MLOps pipeline covering CI/CD, drift monitoring and a RAG/LLM assistant.",
                 tags: ["FastAPI", "LightGBM", "MLOps", "Jenkins", "Docker"],
@@ -726,6 +733,7 @@ export default function Portfolio() {
                   "Fine-tuning",
                   "Embeddings",
                   "Vector Databases",
+                  "Model Evaluation",
                   "NLP",
                   "Computer Vision",
                   "Deep Learning",
@@ -737,6 +745,7 @@ export default function Portfolio() {
                   "LangChain",
                   "LangGraph",
                   "CrewAI",
+                  "Hugging Face",
                   "PyTorch",
                   "TensorFlow",
                   "Scikit-learn",
@@ -758,6 +767,8 @@ export default function Portfolio() {
                   "Power BI",
                   "Dash",
                   "Streamlit",
+                  "Dust",
+                  "Power Automate",
                 ],
               },
             ].map((cat, i) => (
